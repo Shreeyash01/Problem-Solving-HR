@@ -1,22 +1,16 @@
 import math
-import os
 
-def encryption(s):
-    L = len(s)
-    rows = int(math.floor(L**(0.5)))
-    columns = int(math.ceil(L**(0.5)))
-    output = ""
-    for i in range(columns):
-        k = i
-        for j in range(k,L,columns):
-            output+=s[j]
-        output+=" "
-    return output
+s=input()
+l=s.replace(" ","")
+r=math.floor(math.sqrt(len(l)))
+c=math.ceil(math.sqrt(len(l)))
 
+string=''
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-    s = input()
-    result = encryption(s)
-    fptr.write(result + '\n')
-    fptr.close()
+for i in range(c):
+    k=i
+    for j in range(k,len(l),c):
+        string+=l[j]
+    string+=" "
+    
+print(string) 

@@ -1,15 +1,36 @@
-import sys
+p,d,m,s = map(int,input().split())
+cnt = 0
 
-def howManyGames(p, d, m, s):
-    ans = 0
-    while s >= p:
-        s -= p
-        ans += 1
-        p = max(m, p - d)
-    return ans
+while s>0:
+    s -= p
+    p -= d
+    if p<=m:
+        p = m
+    if s<0:
+        break
+    cnt += 1
+    
+print(cnt)
 
-if __name__ == "__main__":
-    p, d, m, s = input().strip().split(' ')
-    p, d, m, s = [int(p), int(d), int(m), int(s)]
-    answer = howManyGames(p, d, m, s)
-    print(answer)
+    
+# p, d, m, s = [int(r) for r in input().split()]
+# t = p
+# cnt = 0
+
+# if t >= s:
+#     print(cnt)
+# else:
+#     while (p > m):
+#         p = p - d
+#         t = t + p
+#         cnt += 1
+#         if t >= s:
+#             break
+#         else:
+#             continue
+
+#     while (t < s):
+#         t = t + m
+#         cnt = cnt + 1
+
+#     print(cnt)

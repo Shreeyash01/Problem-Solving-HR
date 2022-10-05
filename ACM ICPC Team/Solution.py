@@ -3,9 +3,7 @@
 # for i in range(a[0]):
 #     c = input()
 #     b.append(c)
-
 # d=[]
-
 # for i in range(a[0]):
 #     j = i + 1
 #     for j in range(j,a[0]):
@@ -36,5 +34,5 @@ for i in range(N):
         elif(topics==mtopics):
             teams+=1
             
-print (mtopics)
-print (teams)
+print(mtopics)
+print(teams)

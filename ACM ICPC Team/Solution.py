@@ -12,13 +12,13 @@
 #             res=res+str(int(b[i][l]) or int(b[j][l]))
 #         r=res.count('1')
 #         d.append(r)
-
 # m=max(d)
 # print(m)
 # print(d.count(m))
 
 N,k=map(int,input().split())
 l=[]
+
 for i in range(N):
     l.append(int(input(),2))
     
@@ -35,4 +35,5 @@ for i in range(N):
             teams+=1
             
 print(mtopics)
+
 print(teams)

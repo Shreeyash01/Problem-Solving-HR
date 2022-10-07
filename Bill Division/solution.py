@@ -1,5 +1,7 @@
 a=list(map(int,input().split()))
+
 b=list(map(int,input().split()))
+
 c=int(input())
 
 d=(sum(b)-b[a[1]])/2

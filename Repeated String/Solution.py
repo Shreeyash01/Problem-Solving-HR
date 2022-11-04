@@ -8,9 +8,9 @@
 #             a.append(s[i])
 # print(a.count('a'))
 
-s=input()
+st=input()
 n=int(input())
-k=int(s.count('a')*(n//len(s)) + s[:n%len(s)].count('a'))
-print(k)
+c=int(st.count('a')*(n//len(st)) + st[:n%len(st)].count('a'))
+print(c)
 
 

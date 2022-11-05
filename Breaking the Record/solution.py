@@ -1,22 +1,22 @@
 n=int(input())
-a=list(map(int,input().split()))
+c=list(map(int,input().split()))
 
-b=a[0]
-w=a[0]
+b=c[0]
+w=c[0]
 
 cnt1=0
-for i in range(len(a)) :
-    if a[i]>b :
+for i in range(len(c)) :
+    if c[i]>b :
         cnt1 += 1
-        b=a[i]
+        b=c[i]
     else:
         continue
         
 cnt2=0
-for i in range(len(a)) :
-    if a[i]<w :
+for i in range(len(c)) :
+    if c[i]<w :
         cnt2 += 1
-        w=a[i]
+        w=c[i]
     else:
         continue
     
